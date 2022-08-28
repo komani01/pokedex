@@ -1,12 +1,9 @@
 import React from 'react';
 
-import Routes from '../src/routes';
-
+import { Router } from '../src/routes';
+import './global.css';
 function App() {
-	//Remove console.log in production
-	if (process.env.NODE_ENV !== 'development') console.log = () => {};
-
-	return <Routes />;
+	return <Router />;
 }
 
 export default App;
